@@ -1,0 +1,808 @@
+{
+  "rows": 8807,
+  "vocab_size": 10371,
+  "same_type_text_only": 0.9925999999999999,
+  "same_type_blend": 0.9992000000000001,
+  "demos": {
+    "Stranger Things": {
+      "query": {
+        "show_id": "s3686",
+        "type": "TV Show",
+        "title": "Stranger Things",
+        "director": "",
+        "cast": "Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Cara Buono, Noah Schnapp, Matthew Modine, Joe Keery, Dacre Montgomery, Sadie Sink, Paul Reiser, Sean Astin",
+        "country": "United States",
+        "date_added": "July 4, 2019",
+        "release_year": 2019,
+        "rating": "TV-14",
+        "duration": "3 Seasons",
+        "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+        "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl."
+      },
+      "text_only": [
+        {
+          "title": "Nightflyers",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2018,
+          "similarity": 0.6946823402442996
+        },
+        {
+          "title": "Helix",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2015,
+          "similarity": 0.6553640590531031
+        },
+        {
+          "title": "Chilling Adventures of Sabrina",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2020,
+          "similarity": 0.6226343238736385
+        },
+        {
+          "title": "Manifest",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2021,
+          "similarity": 0.5899959493811028
+        },
+        {
+          "title": "The 4400",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2007,
+          "similarity": 0.5598348063731875
+        },
+        {
+          "title": "The Vampire Diaries",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2016,
+          "similarity": 0.5544749295239808
+        },
+        {
+          "title": "The Messengers",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2015,
+          "similarity": 0.548589301062063
+        },
+        {
+          "title": "The OA",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2019,
+          "similarity": 0.5319739892787583
+        },
+        {
+          "title": "Warrior Nun",
+          "type": "TV Show",
+          "listed_in": "TV Action & Adventure, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2020,
+          "similarity": 0.531752226764006
+        },
+        {
+          "title": "Love, Death & Robots",
+          "type": "TV Show",
+          "listed_in": "TV Action & Adventure, TV Horror, TV Sci-Fi & Fantasy",
+          "release_year": 2021,
+          "similarity": 0.5169279149616582
+        }
+      ],
+      "with_type_blend": [
+        {
+          "title": "Nightflyers",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2018,
+          "similarity": 0.6946823402442996
+        },
+        {
+          "title": "Helix",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2015,
+          "similarity": 0.6553640590531031
+        },
+        {
+          "title": "Chilling Adventures of Sabrina",
+          "type": "TV Show",
+          "listed_in": "TV Horror, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2020,
+          "similarity": 0.6226343238736385
+        },
+        {
+          "title": "Manifest",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2021,
+          "similarity": 0.5899959493811028
+        },
+        {
+          "title": "The 4400",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2007,
+          "similarity": 0.5598348063731875
+        },
+        {
+          "title": "The Vampire Diaries",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2016,
+          "similarity": 0.5544749295239808
+        },
+        {
+          "title": "The Messengers",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2015,
+          "similarity": 0.548589301062063
+        },
+        {
+          "title": "The OA",
+          "type": "TV Show",
+          "listed_in": "TV Dramas, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2019,
+          "similarity": 0.5319739892787583
+        },
+        {
+          "title": "Warrior Nun",
+          "type": "TV Show",
+          "listed_in": "TV Action & Adventure, TV Mysteries, TV Sci-Fi & Fantasy",
+          "release_year": 2020,
+          "similarity": 0.531752226764006
+        },
+        {
+          "title": "Love, Death & Robots",
+          "type": "TV Show",
+          "listed_in": "TV Action & Adventure, TV Horror, TV Sci-Fi & Fantasy",
+          "release_year": 2021,
+          "similarity": 0.5169279149616582
+        }
+      ]
+    },
+    "The Crown": {
+      "query": {
+        "show_id": "s290",
+        "type": "TV Show",
+        "title": "The Crowned Clown",
+        "director": "",
+        "cast": "Yeo Jin-goo, Lee Se-young, Kim Sang-kyung, Jung Hye-young, Jang Kwang, Kwon Hae-hyo, Jang Yeong-nam, Lee Kyu-han",
+        "country": "South Korea",
+        "date_added": "August 10, 2021",
+        "release_year": 2019,
+        "rating": "TV-14",
+        "duration": "1 Season",
+        "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+        "description": "Standing in for an unhinged Joseon king, a look-alike clown plays the part but increasingly becomes devoted to protecting the throne and the people."
+      },
+      "text_only": [
+        {
+          "title": "O-Negative, Love Can\u2019t Be Designed",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2016,
+          "similarity": 0.6040297202983335
+        },
+        {
+          "title": "Eternal Love",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2017,
+          "similarity": 0.5905830226230995
+        },
+        {
+          "title": "In Laws",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2016,
+          "similarity": 0.5877938643766357
+        },
+        {
+          "title": "Familiar Wife",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5718978734019675
+        },
+        {
+          "title": "Iron Ladies",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5713143135449236
+        },
+        {
+          "title": "Hati Perempuan",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2015,
+          "similarity": 0.5632737661790157
+        },
+        {
+          "title": "The Could\u2019ve-Gone-All-the-Way Committee",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5589315285846183
+        },
+        {
+          "title": "The Many Faces of Ito",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2017,
+          "similarity": 0.5569059832441196
+        },
+        {
+          "title": "The Rational Life",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5564228090587044
+        },
+        {
+          "title": "100 Days My Prince",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5560434704742004
+        }
+      ],
+      "with_type_blend": [
+        {
+          "title": "O-Negative, Love Can\u2019t Be Designed",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2016,
+          "similarity": 0.6040297202983335
+        },
+        {
+          "title": "Eternal Love",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2017,
+          "similarity": 0.5905830226230995
+        },
+        {
+          "title": "In Laws",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2016,
+          "similarity": 0.5877938643766357
+        },
+        {
+          "title": "Familiar Wife",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5718978734019675
+        },
+        {
+          "title": "Iron Ladies",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5713143135449236
+        },
+        {
+          "title": "Hati Perempuan",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2015,
+          "similarity": 0.5632737661790157
+        },
+        {
+          "title": "The Could\u2019ve-Gone-All-the-Way Committee",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5589315285846183
+        },
+        {
+          "title": "The Many Faces of Ito",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2017,
+          "similarity": 0.5569059832441196
+        },
+        {
+          "title": "The Rational Life",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5564228090587044
+        },
+        {
+          "title": "100 Days My Prince",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, Romantic TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5560434704742004
+        }
+      ]
+    },
+    "Squid Game": {
+      "query": {
+        "show_id": "s34",
+        "type": "TV Show",
+        "title": "Squid Game",
+        "director": "",
+        "cast": "Lee Jung-jae, Park Hae-soo, Wi Ha-jun, Oh Young-soo, Jung Ho-yeon, Heo Sung-tae, Kim Joo-ryoung, Tripathi Anupam, You Seong-joo, Lee You-mi",
+        "country": "",
+        "date_added": "September 17, 2021",
+        "release_year": 2021,
+        "rating": "TV-MA",
+        "duration": "1 Season",
+        "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+        "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits \u2014 with deadly high stakes."
+      },
+      "text_only": [
+        {
+          "title": "Kakegurui",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.5754966759909037
+        },
+        {
+          "title": "Til Death Do Us Part",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4963860302623219
+        },
+        {
+          "title": "Marseille",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2018,
+          "similarity": 0.4849321384001508
+        },
+        {
+          "title": "50M2",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2021,
+          "similarity": 0.4845256714615046
+        },
+        {
+          "title": "Nobel",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2016,
+          "similarity": 0.4841106647962481
+        },
+        {
+          "title": "Occupied",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4756164228576358
+        },
+        {
+          "title": "Children of Adam",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2020,
+          "similarity": 0.47436564431602846
+        },
+        {
+          "title": "The Spy",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4675793744487873
+        },
+        {
+          "title": "Gonul",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2015,
+          "similarity": 0.4582221865984535
+        },
+        {
+          "title": "Ozark",
+          "type": "TV Show",
+          "listed_in": "Crime TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2020,
+          "similarity": 0.4556716652400882
+        }
+      ],
+      "with_type_blend": [
+        {
+          "title": "Kakegurui",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.5754966759909037
+        },
+        {
+          "title": "Til Death Do Us Part",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4963860302623219
+        },
+        {
+          "title": "Marseille",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2018,
+          "similarity": 0.4849321384001508
+        },
+        {
+          "title": "50M2",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2021,
+          "similarity": 0.4845256714615046
+        },
+        {
+          "title": "Nobel",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2016,
+          "similarity": 0.4841106647962481
+        },
+        {
+          "title": "Occupied",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4756164228576358
+        },
+        {
+          "title": "Children of Adam",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2020,
+          "similarity": 0.47436564431602846
+        },
+        {
+          "title": "The Spy",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2019,
+          "similarity": 0.4675793744487873
+        },
+        {
+          "title": "Gonul",
+          "type": "TV Show",
+          "listed_in": "International TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2015,
+          "similarity": 0.4582221865984535
+        },
+        {
+          "title": "Ozark",
+          "type": "TV Show",
+          "listed_in": "Crime TV Shows, TV Dramas, TV Thrillers",
+          "release_year": 2020,
+          "similarity": 0.4556716652400882
+        }
+      ]
+    },
+    "Black Mirror": {
+      "query": {
+        "show_id": "s3775",
+        "type": "TV Show",
+        "title": "Black Mirror",
+        "director": "",
+        "cast": "Jesse Plemons, Cristin Milioti, Jimmi Simpson, Rosemarie DeWitt, Douglas Hodge, Andrea Riseborough, Brenna Harding, Owen Teague, Andrew Gower, Kiran Sonia Sawar, Georgina Campbell, Joe Cole, Maxine Peake, Jake Davies, Clint Dyer, Letitia Wright, Babs Olusanmokun, Bryce Dallas Howard, Alice Eve, Michael Kelly, Cherry Jones, Gugu Mbatha-Raw, Mackenzie Davis, Wyatt Russell, Benedict Wong, Kelly Macdonald, Faye Marsay, Madeline Brewer, Hannah John-Kamen, Malachi Kirby, Alex Lawther, Jerome Flynn, James Norton, Rory Kinnear, Lindsay Duncan, Daniel Kaluuya, Jessica Brown Findlay, Rupert Everett, Toby Kebbell, Jodie Whittaker, Hayley Atwell, Domhnall Gleeson, Lenora Crichlow, Michael Smiley, Daniel Rigby, Chloe Pirrie, Jason Flemyng, Jon Hamm, Oona Chaplin, Rafe Spall",
+        "country": "United Kingdom",
+        "date_added": "June 5, 2019",
+        "release_year": 2019,
+        "rating": "TV-MA",
+        "duration": "5 Seasons",
+        "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+        "description": "This sci-fi anthology series explores a twisted, high-tech near-future where humanity's greatest innovations and darkest instincts collide."
+      },
+      "text_only": [
+        {
+          "title": "Leila",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2019,
+          "similarity": 0.5883690062950775
+        },
+        {
+          "title": "Downton Abbey",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2015,
+          "similarity": 0.5513772824980949
+        },
+        {
+          "title": "The A List",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5464779472446014
+        },
+        {
+          "title": "Dracula",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2020,
+          "similarity": 0.5277933926773448
+        },
+        {
+          "title": "Call the Midwife",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2020,
+          "similarity": 0.5267834520877697
+        },
+        {
+          "title": "Behind Her Eyes",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5254871779007959
+        },
+        {
+          "title": "Requiem",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5233021614523835
+        },
+        {
+          "title": "Traitors",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2019,
+          "similarity": 0.5216514216087742
+        },
+        {
+          "title": "Land Girls",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2011,
+          "similarity": 0.5182396069933096
+        },
+        {
+          "title": "Fate: The Winx Saga",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5093557155621633
+        }
+      ],
+      "with_type_blend": [
+        {
+          "title": "Leila",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2019,
+          "similarity": 0.5883690062950775
+        },
+        {
+          "title": "Downton Abbey",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2015,
+          "similarity": 0.5513772824980949
+        },
+        {
+          "title": "The A List",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5464779472446014
+        },
+        {
+          "title": "Dracula",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2020,
+          "similarity": 0.5277933926773448
+        },
+        {
+          "title": "Call the Midwife",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2020,
+          "similarity": 0.5267834520877697
+        },
+        {
+          "title": "Behind Her Eyes",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5254871779007959
+        },
+        {
+          "title": "Requiem",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2018,
+          "similarity": 0.5233021614523835
+        },
+        {
+          "title": "Traitors",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2019,
+          "similarity": 0.5216514216087742
+        },
+        {
+          "title": "Land Girls",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2011,
+          "similarity": 0.5182396069933096
+        },
+        {
+          "title": "Fate: The Winx Saga",
+          "type": "TV Show",
+          "listed_in": "British TV Shows, International TV Shows, TV Dramas",
+          "release_year": 2021,
+          "similarity": 0.5093557155621633
+        }
+      ]
+    },
+    "The Witcher": {
+      "query": {
+        "show_id": "s241",
+        "type": "Movie",
+        "title": "The Witcher: Nightmare of the Wolf",
+        "director": "Han Kwang Il",
+        "cast": "Theo James, Mary McDonnell, Lara Pulver, Graham McTavish, Tom Canton, David Errigo Jr, Jennifer Hale, Kari Wahlgren, Matt Yang King, Darryl Kurylo, Keith Ferguson",
+        "country": "",
+        "date_added": "August 23, 2021",
+        "release_year": 2021,
+        "rating": "TV-MA",
+        "duration": "84 min",
+        "listed_in": "Action & Adventure, Anime Features",
+        "description": "Escaping from poverty to become a witcher, Vesemir slays monsters for coin and glory, but when a new menace rises, he must face the demons of his past."
+      },
+      "text_only": [
+        {
+          "title": "Ghost Whispers",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2013,
+          "similarity": 0.5316668955754877
+        },
+        {
+          "title": "Girls und Panzer der Film",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2015,
+          "similarity": 0.5064550289550913
+        },
+        {
+          "title": "Ghost Tears",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2014,
+          "similarity": 0.4867100421063205
+        },
+        {
+          "title": "Naruto Shipp\u00fbden the Movie: The Will of Fire",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2009,
+          "similarity": 0.48639140885161114
+        },
+        {
+          "title": "InuYasha the Movie 3: Swords of an Honorable Ruler",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2003,
+          "similarity": 0.48363864296562664
+        },
+        {
+          "title": "Inuyasha the Movie - La spada del dominatore del mondo",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2003,
+          "similarity": 0.48363864296562664
+        },
+        {
+          "title": "Naruto the Movie: Ninja Clash in the Land of Snow",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2004,
+          "similarity": 0.4835425319421642
+        },
+        {
+          "title": "EVANGELION: DEATH (TRUE)\u00b2",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 1998,
+          "similarity": 0.4796107340502835
+        },
+        {
+          "title": "Fate/Grand Order -First Order-",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2016,
+          "similarity": 0.4766020754972009
+        },
+        {
+          "title": "Naruto the Movie 3: Guardians of the Crescent Moon Kingdom",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2006,
+          "similarity": 0.47430458312437823
+        }
+      ],
+      "with_type_blend": [
+        {
+          "title": "Ghost Whispers",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2013,
+          "similarity": 0.5316668955754877
+        },
+        {
+          "title": "Girls und Panzer der Film",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2015,
+          "similarity": 0.5064550289550913
+        },
+        {
+          "title": "Ghost Tears",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2014,
+          "similarity": 0.4867100421063205
+        },
+        {
+          "title": "Naruto Shipp\u00fbden the Movie: The Will of Fire",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2009,
+          "similarity": 0.48639140885161114
+        },
+        {
+          "title": "InuYasha the Movie 3: Swords of an Honorable Ruler",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2003,
+          "similarity": 0.48363864296562664
+        },
+        {
+          "title": "Inuyasha the Movie - La spada del dominatore del mondo",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2003,
+          "similarity": 0.48363864296562664
+        },
+        {
+          "title": "Naruto the Movie: Ninja Clash in the Land of Snow",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2004,
+          "similarity": 0.4835425319421642
+        },
+        {
+          "title": "EVANGELION: DEATH (TRUE)\u00b2",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 1998,
+          "similarity": 0.4796107340502835
+        },
+        {
+          "title": "Fate/Grand Order -First Order-",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2016,
+          "similarity": 0.4766020754972009
+        },
+        {
+          "title": "Naruto the Movie 3: Guardians of the Crescent Moon Kingdom",
+          "type": "Movie",
+          "listed_in": "Action & Adventure, Anime Features, International Movies",
+          "release_year": 2006,
+          "similarity": 0.47430458312437823
+        }
+      ]
+    }
+  }
+}
