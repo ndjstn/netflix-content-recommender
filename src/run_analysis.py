@@ -173,41 +173,55 @@ def main() -> None:
     fig.savefig(fig_dir / "similarity-matrix-sample.png")
     plt.close(fig)
 
-    # Story animation: for the Stranger Things query, sweep type_weight from 0 to 0.3 and show how many movies vs TV shows appear in the top-10
-    target_idx = find("Stranger Things")
+    # Story animation: for Stranger Things (TV show) AND Pulp Fiction (movie), sweep type weight
+    # side-by-side panel so you can see one query stays put and the other pivots.
+    story_queries = [("Stranger Things", "TV Show"), ("Pulp Fiction", "Movie")]
     weights = np.linspace(0, 0.3, 16)
-    movie_counts, show_counts = [], []
-    frame_titles = []
-    for w in weights:
-        recs_w = recommend(target_idx, k=10, type_weight=float(w))
-        movie_counts.append(int((recs_w["type"] == "Movie").sum()))
-        show_counts.append(int((recs_w["type"] == "TV Show").sum()))
-        frame_titles.append(", ".join(recs_w["title"].head(3).tolist()))
+    data = {}
+    for title, qtype in story_queries:
+        idx = find(title)
+        mc, sc, tops = [], [], []
+        for w in weights:
+            r = recommend(idx, k=10, type_weight=float(w))
+            mc.append(int((r["type"] == "Movie").sum()))
+            sc.append(int((r["type"] == "TV Show").sum()))
+            tops.append(r["title"].head(3).tolist())
+        data[title] = dict(qtype=qtype, movies=mc, shows=sc, tops=tops)
 
-    fig, ax = plt.subplots(figsize=(10, 5))
-    bar_movie = ax.bar([0.3], [5], width=0.4, color=P.accent, label="Movie")
-    bar_show = ax.bar([0.7], [5], width=0.4, color=P.header_bg, label="TV Show")
-    count_txt = ax.text(0.5, 10.3, "", ha="center", fontsize=12, fontweight="bold")
-    titles_txt = ax.text(0.5, -1.8, "", ha="center", fontsize=9, style="italic", color=P.message_text)
-    weight_txt = ax.text(0.05, 10.3, "", fontsize=12, fontweight="bold", color=P.text)
-    ax.set_xlim(0, 1); ax.set_ylim(0, 11)
-    ax.set_xticks([0.3, 0.7]); ax.set_xticklabels(["Movie", "TV Show"])
-    ax.set_ylabel("Titles in top-10")
-    ax.set_title("Stranger Things query: type mix as the type penalty grows")
-    ax.legend(loc="upper right")
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6.2))
+    fig.subplots_adjust(top=0.82, bottom=0.28, wspace=0.30)
+    sup = fig.suptitle("", fontsize=13, fontweight="bold", y=0.96)
+
+    panel_artists = {}
+    for ax_, (title, d) in zip(axes, data.items()):
+        ax_.set_xlim(-0.5, 1.5); ax_.set_ylim(0, 12)
+        ax_.set_xticks([0, 1]); ax_.set_xticklabels(["Movie", "TV Show"], fontsize=11)
+        ax_.set_ylabel("Titles in top-10", fontsize=11)
+        ax_.set_title(f"{title}  ({d['qtype']})", fontsize=12)
+        bars = ax_.bar([0, 1], [0, 0], width=0.6, color=[P.accent, P.header_bg], edgecolor=P.bg, linewidth=1.5)
+        count_a = ax_.text(0, 0, "", ha="center", va="bottom", fontsize=12, fontweight="bold")
+        count_b = ax_.text(1, 0, "", ha="center", va="bottom", fontsize=12, fontweight="bold")
+        tops_txt = fig.text(ax_.get_position().x0 + ax_.get_position().width / 2, 0.09, "", ha="center", fontsize=9, style="italic", color=P.message_text, wrap=True)
+        panel_artists[title] = (bars, count_a, count_b, tops_txt)
 
     def animate(i):
         w = weights[i]
-        m, s = movie_counts[i], show_counts[i]
-        bar_movie[0].set_height(m)
-        bar_show[0].set_height(s)
-        weight_txt.set_text(f"type-penalty weight = {w:.2f}")
-        count_txt.set_text(f"{m} movies / {s} shows in top-10")
-        titles_txt.set_text(f"top 3: {frame_titles[i]}")
-        return bar_movie[0], bar_show[0], weight_txt, count_txt, titles_txt
+        sup.set_text(f"Type-penalty sweep     weight = {w:.2f}")
+        arts = []
+        for title, (bars, count_a, count_b, tops_txt) in panel_artists.items():
+            d = data[title]
+            m, s = d["movies"][i], d["shows"][i]
+            bars[0].set_height(m); bars[1].set_height(s)
+            count_a.set_position((0, m + 0.3)); count_a.set_text(str(m))
+            count_b.set_position((1, s + 0.3)); count_b.set_text(str(s))
+            top3 = ", ".join(t[:34] + ("…" if len(t) > 34 else "") for t in d["tops"][i])
+            tops_txt.set_text(f"top 3: {top3}")
+            arts.extend([*bars, count_a, count_b, tops_txt])
+        arts.append(sup)
+        return arts
 
-    anim = animation.FuncAnimation(fig, animate, frames=len(weights), interval=400, blit=False)
-    anim.save(str(fig_dir / "type-weight-animation.gif"), writer="pillow", fps=3)
+    anim = animation.FuncAnimation(fig, animate, frames=len(weights), interval=500, blit=False)
+    anim.save(str(fig_dir / "type-weight-animation.gif"), writer="pillow", fps=2)
     plt.close(fig)
 
     summary = {
